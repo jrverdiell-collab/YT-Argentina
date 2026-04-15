@@ -1,0 +1,33 @@
+name: YT Argentina semanal
+
+on:
+  schedule:
+    - cron: '0 2 * * 2'
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Descargar repositorio
+      uses: actions/checkout@v4
+
+    - name: Instalar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Instalar dependencias
+      run: |
+        pip install -r requirements.txt
+
+    - name: Crear credenciales
+      run: echo '${{ secrets.SERVICE_ACCOUNT_JSON }}' > service_account.json
+
+    - name: Ejecutar script 1
+      run: python yt_argentina_fetch_completo.py
+
+    - name: Ejecutar script 2
+      run: python yt_argentina_postprocess_completo.py
