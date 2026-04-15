@@ -1,0 +1,5 @@
+gspread
+google-auth
+beautifulsoup4
+selenium
+webdriver-manager
