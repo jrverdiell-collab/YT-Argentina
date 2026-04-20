@@ -28,7 +28,7 @@ SHEET_FULL = "Full 1"
 SHEET_YT = "YT Argentina"
 POSTPROCESS_SCRIPT = "yt_argentina_postprocess_completo.py"
 
-LLISTA_CONST = "YTCHar"
+LLISTA_CONST = "YTCHArg"
 PAIS_CONST = "Argentina"
 
 HEADERS_YT = ["Núm. Lista", "Cançó", "Interpret", "Data", "Llista", "Pais"]
