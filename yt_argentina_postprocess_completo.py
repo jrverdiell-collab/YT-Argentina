@@ -19,7 +19,7 @@ SHEET_RANK_NUM1 = "Ranking Números 1"
 SHEET_RANK_YT = "Ranking llista Completa"
 SHEET_RANK_TOP10 = "Ranking primeres 10 cançons"
 
-LLISTA_CONST = "YTCHar"
+LLISTA_CONST = "YTCHArg"
 PAIS_CONST = "Argentina"
 
 HEADERS_STANDARD = ["Núm. Lista", "Cançó", "Interpret", "Data", "Llista", "Pais"]
