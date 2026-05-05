@@ -2,7 +2,7 @@ name: YT Argentina semanal
 
 on:
   schedule:
-    - cron: '0 2 * * 2'
+    - cron: '10 3 * * 6'
   workflow_dispatch:
 
 jobs:
